@@ -1,14 +1,14 @@
 import React from 'react'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 
 class Counter extends React.Component {
 
     handleDecrement = () => {
-
+        this.props.dispatch({ type: 'DECREMENT' })
     }
 
     handleIncrement = () => {
-        
+        this.props.dispatch({ type: 'INCREMENT' })
     }
 
     render() {
@@ -26,9 +26,8 @@ class Counter extends React.Component {
 }
 
 function mapStateToProps(state) {
-    return {
-        count: state.count
-    }
+    const { counterReducer: { count } } = state;
+    return { count }
 }
 
 export default connect(mapStateToProps)(Counter);
