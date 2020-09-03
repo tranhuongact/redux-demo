@@ -6,6 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import Counter from "./components/Counter"
+import Todo from './components/todo'
 
 export default function App() {
   return (
@@ -31,7 +32,7 @@ export default function App() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/todo">
-            <Home />
+            <Todo />
           </Route>
           <Route path="/counter">
             <Counter />

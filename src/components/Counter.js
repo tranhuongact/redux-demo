@@ -31,5 +31,3 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps)(Counter);
-
-// https://spiderum.com/bai-dang/Redux-hoat-dong-ra-sao-Thong-qua-vi-du-so-dem-ags
