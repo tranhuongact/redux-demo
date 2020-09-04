@@ -8,7 +8,8 @@ const initialState = {
     ]
 }
 
-export default function todoReducer(state = initialState, action) {
+export default function todoReducer(state = [], action) {
+    console.log("reducer action: ", action)
     switch (action.type) {
         case 'ADD_TODO':
             return [...state]

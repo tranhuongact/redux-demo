@@ -21,7 +21,7 @@ export default function TodoList(props) {
     //     { id: 2, content: 'Learn Redux', completed: true }
     // ];
 
-    const todoList = useSelector(state => state.todoReducer.data)
+    const todoList = useSelector(state => state.todoReducer)
 
     // console.log("hehe", useSelector(state => state.todoReducer))
 
